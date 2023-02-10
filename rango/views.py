@@ -4,7 +4,6 @@ from django.urls import reverse
 from rango.models import Category, Page
 from rango.forms import CategoryForm, PageForm
 
-
 def index(request):
     # Display top 5 categories and pages
     category_list = Category.objects.order_by('-likes')[:5]
